@@ -1,0 +1,71 @@
+.third-div-container{
+	display: grid;
+	grid-template-columns: 1fr 600px;
+	gap: 20px;
+	height: 100vh;
+	padding: 20px;
+	align-items: center;
+	background-color: #1a1a1a;
+	color: white;
+}
+
+.text-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+
+}
+
+.text-section h2 {
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+.text-section p{
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.image-section{
+	width: 600px;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+	animation: colorShift 10s infinite alternate;
+}
+
+@keyframes colorShift{
+	0%{
+		filter: hue-rotate(0deg);
+	}
+	50%{
+		filter: hue-rotate(45deg);
+	}
+	100%{
+		filter: hue-rotate(90deg);
+	}
+}
+
+.button-overlay{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+
+button {
+	padding: 10px 20px;
+	border: none;
+	background-color: #333;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+
+}
+
+button:hover{
+	background-color: #555;
+}
